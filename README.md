@@ -1,6 +1,8 @@
 ﻿mccontrolapi
 ============
 
+Visit: http://tbspace.de for more information ;)
+
 MCcontrolAPI features an easy way to control a minecraft server from a C# or VB.net program.
 
 You can find an demo project in the mccontrolapi/Demo Folder (written in VB).

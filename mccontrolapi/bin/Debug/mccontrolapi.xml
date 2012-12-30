@@ -1,0 +1,311 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+mccontrolapi
+</name>
+</assembly>
+<members>
+<member name="P:mccontrolapi.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:mccontrolapi.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:mccontrolapi.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:mccontrolapi.Functions.getPlayers(mccontrolapi.Connection)">
+	<summary>
+ Holt Informationen über einen Spieler
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getPlayer(System.String,mccontrolapi.Connection)">
+	<summary>
+ Holt Informationen über einen Spieler
+ </summary>
+	<param name="user">Der Nutzername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.addToWhitelist(System.String,mccontrolapi.Connection)">
+	<summary>
+ Fügt einen Spieler der Whitelist hinzu
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.ban(System.String,mccontrolapi.Connection)">
+	<summary>
+ Bannt einen Spieler
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.banWithReason(System.String,System.String,mccontrolapi.Connection)">
+	<summary>
+ Bannt einen Spieler mit Grund
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="reason">Der Grund des Banns</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.broadcast(System.String,mccontrolapi.Connection)">
+	<summary>
+ Schickt eine Nachricht an jeden Spieler
+ </summary>
+	<param name="text">Die Nachricht</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns>Anzahl der Empfänger (Console auch!)</returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.broadcastWithName(System.String,System.String,mccontrolapi.Connection)">
+	<summary>
+ Schickt eine Nachricht an jeden Spieler mit Name
+ </summary>
+	<param name="username">Ausgabename</param>
+	<param name="message">Die Nachricht</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.clearPlayerInventorySlot(System.String,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Löscht das Item an angegebener Slot ID
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="slot">Die Slotnummer (Liste auf: http://media-mcw.cursecdn.com/8/8c/Items_slot_number.JPG). </param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.deopPlayer(System.String,mccontrolapi.Connection)">
+	<summary>
+ Entfernt OP Rechte des angegebenen Spielers.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.disablePlugin(System.String,mccontrolapi.Connection)">
+	<summary>
+ Deaktiviert das angegebene Plugin
+ </summary>
+	<param name="pluginname">Name der .JAR des Plugins.</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.disablePlugins(mccontrolapi.Connection)">
+	<summary>
+ Deaktiviert alle installierten, aktivierten Plugins.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.editPropertiesFile(System.String,System.String,System.String,System.String,mccontrolapi.Connection)">
+	<summary>
+ Editiert einen Key in der .properties Datei des Servers
+ </summary>
+	<param name="PropertiesFileWithoutExtension">Dateiname der .properties ohne Endung!!! (Standart: server)</param>
+	<param name="ValueType">Gibt den Datentyp an welcher die .properties Datei enthält. (Z.B. level-name=world -&gt; world = String, Zur Auswahl steht Boolean,Long,Integer,String und Double.)</param>
+	<param name="Key">Der Key der verändert werden soll. Z.B. level-name</param>
+	<param name="Value">Der Wert der vom Key geändert werden soll.</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.enablePlugin(System.String,mccontrolapi.Connection)">
+	<summary>
+ Aktiviert das angegebene Plugin
+ </summary>
+	<param name="pluginname">Name des Plugins</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getBukkitVersion(mccontrolapi.Connection)">
+	<summary>
+ Liefert die Bukkit Version als String.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getBinaryFileBase64(System.String,mccontrolapi.Connection)">
+	<summary>
+ Liefert den Inhalt einer Datei Base64 kodiert
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getPlayerCount(mccontrolapi.Connection)">
+	<summary>
+ Liefert die Anzahl von Spielern die Online sind als Integer.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getPlayerLimit(mccontrolapi.Connection)">
+	<summary>
+ Liefert die Anzahl an erlaubten Spieler auf dem Server als Integer.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getPluginVersion(System.String,mccontrolapi.Connection)">
+	<summary>
+ Liefert die Version vom angegebenen Plugin als String
+ </summary>
+	<param name="pluginname">Name des Plugins</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getServerIp(mccontrolapi.Connection)">
+	<summary>
+ Liefert die Server IP des Servers wenn sie angegeben ist. Ansonsten wird ein leerer String zurückgegeben.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getServerPort(mccontrolapi.Connection)">
+	<summary>
+ Liefert den Port auf dem der Server läuft als Integer.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.getServerVersion(mccontrolapi.Connection)">
+	<summary>
+ Liefert die Server Version als String
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.givePlayerItem(System.String,System.Int32,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Gibt dem angegebenen Spieler das angegebene Item mit angegebener Anzahl.
+ </summary>
+	<param name="username"></param>
+	<param name="itemid"></param>
+	<param name="anzahl"></param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.givePlayerItemDrop(System.String,System.Int32,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Droppt dem angegebenen Spieler das angegebene Item mit angegebener Anzahl.
+ </summary>
+	<param name="username"></param>
+	<param name="itemid"></param>
+	<param name="anzahl"></param>
+	<param name="connection"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.givePlayerItemDropWithData(System.String,System.Int32,System.Int32,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Droppt dem angegebenen Spieler das angegebene Item mit angegebener Anzahl und angegebener Data.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="itemid">Item ID (Liste hier: http://media-mcw.cursecdn.com/3/33/ItemslistV110.png) .</param>
+	<param name="anzahl">Anzahl an Items</param>
+	<param name="data">Data</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.givePlayerItemWithData(System.String,System.Int32,System.Int32,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Gibt dem angegebenen Spieler das angegebene Item mit angegebener Anzahl und angegebener Data.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="itemid">Item ID (Liste hier: http://media-mcw.cursecdn.com/3/33/ItemslistV110.png) .</param>
+	<param name="anzahl">Anzahl an Items</param>
+	<param name="data">Data</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.kickPlayer(System.String,System.String,mccontrolapi.Connection)">
+	<summary>
+ Kickt den angegebenen Spieler und zeigt ihm eine Kicknachricht.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="kickmessage">Nachricht die dem gekickten erscheint.</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.opPlayer(System.String,mccontrolapi.Connection)">
+	<summary>
+ Gibt dem angegebenen Spieler OP-Rechte.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.reloadServer(mccontrolapi.Connection)">
+	<summary>
+ Lädt den Server neu.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.removeFromWhitelist(System.String,mccontrolapi.Connection)">
+	<summary>
+ Entfernt den angegebenen Spieler von der Whitelist.
+ </summary>
+	<param name="username">Der Spielername</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.runConsoleCommand(System.String,mccontrolapi.Connection)">
+	<summary>
+ Führt den angegebenen Consolen Befehl aus.
+ </summary>
+	<param name="cmd">Der Consolen Befehl.</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.saveMap(mccontrolapi.Connection)">
+	<summary>
+ Speichert die Map im aktuellen Status ab.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.saveOff(mccontrolapi.Connection)">
+	<summary>
+ Deaktiviert die Funktion: Automatisches Speichern.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.saveOn(mccontrolapi.Connection)">
+	<summary>
+ Aktiviert die Funktion: Automatisches Speichern.
+ </summary>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.sendMessage(System.String,System.String,System.String,mccontrolapi.Connection)">
+	<summary>
+ Sendet eine Nachricht vom angegebenen Spieler zum angegebenen Spieler.
+ </summary>
+	<param name="usernamefrom">Der Sender</param>
+	<param name="usernameto">Der Empfänger</param>
+	<param name="message">Die Nachricht</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:mccontrolapi.Functions.setPlayerGameMode(System.String,System.Int32,mccontrolapi.Connection)">
+	<summary>
+ Ändert den Spielmodus des Spielers
+ </summary>
+	<param name="user">Der Nutzername</param>
+	<param name="gamemode">Spielmode (0 - Survival, 1 - Creative</param>
+	<param name="connection">Die Verbindung zum Server</param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
